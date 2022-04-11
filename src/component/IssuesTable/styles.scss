@@ -1,0 +1,42 @@
+.issues-table {
+    .issues-table-area {
+        .title-area, .info-area {
+            .title {
+                &.no {
+                    min-width: 3.8125rem;
+                    width: 5.4416%;
+                }
+
+                &.create-on, &.type {
+                    min-width: 8.0625rem;
+                    width: 11.5076%;
+                }
+
+                &.desc {
+                    min-width: 230px;
+                    width: 20.5174%;
+                }
+
+                &.assign {
+                    min-width: 198px;
+                    width: 17.6628%;
+                }
+
+                &.prior {
+                    min-width: 99px;
+                    width: 8.8314%;
+                }
+
+                &.branch {
+                    min-width: 7.0625rem;
+                    width: 10.0803%;
+                }
+
+                &.stat {
+                    min-width: 10.125rem;
+                    width: 14.4514%;
+                }
+            }
+        }
+    }
+}

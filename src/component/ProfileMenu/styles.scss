@@ -1,0 +1,43 @@
+.profile-menu {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0rem;
+    right: 0;
+    z-index: 3;
+    top: 2rem;
+    cursor: default;
+    border-radius: 4px;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 0px 2px 20px rgba(207, 207, 207, 0.42);
+    border: 1px solid rgb(231, 231, 231);
+
+    &.hide {
+        transform: scale(0);
+    }
+
+    .optn {
+        cursor: pointer;
+        padding: 0.4rem 1rem;
+        // background-color: blue;
+        display: flex;
+        transition: background-color 0.25s ease-in-out;
+        &:hover {
+            background-color: #e5e5e9;
+        }
+
+        svg {
+            margin-right: 0.5rem;
+
+            path {
+                fill: #0F0700;
+            }
+        }
+
+        span {
+            display: block;
+            font-weight: 600;
+            color: #0F0700;
+        }
+    }
+}

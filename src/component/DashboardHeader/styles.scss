@@ -1,0 +1,127 @@
+$black: #09121f;
+
+.dash-header {
+  padding: 1.0625rem 2.190625rem 1rem 2rem;
+  width: 100%;
+  background-color: #ffffff;
+
+  .header-details {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .collapse-area {
+      display: none;
+    }
+    .hd {
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 24px;
+        color: #0f0700;
+        margin: 0 0 0.25rem 0;
+      }
+
+      .time {
+        color: #a6aab4;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .header-actions {
+    .noti {
+      cursor: pointer;
+      margin: 0 1.5rem 0 0;
+    }
+    .user-area {
+        position: relative;
+      cursor: pointer;
+      .user-logo {
+        margin: 0 0.5625rem 0 0;
+      }
+      .user-details {
+        .name {
+          font-weight: 700;
+          font-size: 0.75rem;
+          line-height: 16px;
+          letter-spacing: -0.1px;
+          color: #09121f;
+
+          svg {
+            margin: 0 0 0 0.378125rem;
+          }
+        }
+
+        .title {
+          font-weight: 400;
+          font-size: 0.625rem;
+          line-height: 14px;
+          color: #09121f;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 50em) {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+
+    .header-details {
+      display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      margin-right: 1rem;
+      .collapse-area {
+        display: block;
+        margin-right: 1rem;
+      }
+      .hd {
+        h1 {
+          font-size: 1.2rem;
+          line-height: 10px;
+        }
+
+        .time {
+          font-size: 0.75rem;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .header-actions {
+      .noti {
+        margin: 0 1rem 0 0;
+        svg {
+          width: 1rem;
+          height: fit-content;
+        }
+      }
+      .user-area {
+        .user-logo {
+          margin: 0 0.5625rem 0 0;
+          svg {
+            width: 1rem;
+            height: fit-content;
+          }
+        }
+        .user-details {
+          .name {
+            font-size: 0.65rem;
+            line-height: 11px;
+            svg {
+              margin: 0 0 0 0.378125rem;
+            }
+          }
+
+          .title {
+            font-weight: 400;
+            font-size: 0.6rem;
+            line-height: 14px;
+            color: #09121f;
+          }
+        }
+      }
+    }
+  }
+}

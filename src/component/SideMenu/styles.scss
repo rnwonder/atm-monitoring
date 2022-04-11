@@ -1,0 +1,213 @@
+$logo: 2.1875rem;
+$black: #0f0700;
+
+.side-menu {
+  padding: 1.375rem 0 1.125rem 0;
+  width: 100%;
+  max-width: 15.9375rem;
+  min-width: 15.9375rem;
+  box-shadow: 0px 2px 20px rgba(207, 207, 207, 0.42);
+  position: relative;
+  z-index: 2;
+  transition: width 0.25s ease-out, max-width 0.25s ease-out,
+    min-width 0.25s ease-out;
+  // background-color: rgb(156, 99, 13) !important;
+  &.mini {
+    max-width: 5rem;
+    min-width: 5rem;
+    .side-menu-container {
+      .top {
+        padding: 0;
+        justify-content: center !important;
+        .title {
+          transition: transform 0s 0s ease-in;
+          transform: scale(0);
+          width: 0rem;
+        }
+      }
+
+      .nav-area {
+        .option {
+          justify-content: center;
+          .optn-name {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .btn-area {
+      .add-btns {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .button {
+          width: 4.875rem;
+          &.privacy {
+            width: 4.875rem;
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .side-menu-container {
+    .top {
+      padding: 0 1rem 0 1.5rem;
+      margin: 0 0 4.375rem 0;
+
+      .title {
+        transform: scale(1);
+        transition: transform 0s 0.25s ease-in;
+
+        .logo-area {
+          width: $logo;
+          height: $logo;
+          background: $black;
+          border-radius: 8px;
+          margin: 0 0.8125rem 0 0;
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 1rem;
+        }
+      }
+
+      .collapse-area {
+        // background-color: rgb(0, 255, 42);
+        padding: 0 0.3rem;
+        cursor: pointer;
+      }
+    }
+
+    .list-title {
+      padding: 0 0 0 1rem;
+      font-weight: 400;
+      font-size: 0.625rem;
+      line-height: 12px;
+      letter-spacing: 0.3px;
+      color: #98a2b3;
+      margin: 0 0 0.4375rem 0;
+
+      &.lt2 {
+        margin-top: 2.625rem;
+      }
+    }
+
+    .nav-area {
+      .option {
+        display: flex;
+        align-items: center;
+        padding: 1.25rem 1rem 1.125rem 1.8125rem;
+        cursor: pointer;
+        border-left: 3px solid white;
+
+        &.active {
+          border-color: $black;
+          background: linear-gradient(
+            90deg,
+            #0f07000e 0%,
+            rgba(15, 7, 0, 0) 100%
+          );
+
+          .icon {
+            svg {
+              path {
+                fill: $black;
+              }
+            }
+          }
+          .optn-name {
+            color: $black;
+          }
+        }
+
+        .icon {
+          margin: 0 1.0625rem 0 0;
+          svg {
+            path {
+              fill: #a4a6b3;
+            }
+          }
+        }
+        .optn-name {
+          font-weight: 700;
+          font-size: 1rem;
+          color: #a4a6b3;
+        }
+      }
+    }
+  }
+
+  .btn-area {
+    // background-color: rgb(119, 60, 60);
+    .nav-area {
+      margin-bottom: 3.5625rem;
+    }
+    .add-btns {
+      justify-content: center;
+      .button {
+        width: 4.375rem;
+        &.privacy {
+          width: 4.875rem;
+          margin-right: 0.4606rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 62.5em) {
+    $logo: 1.9rem;
+    max-width: 13rem;
+    min-width: 13rem;
+
+    .side-menu-container {
+      .top {
+        padding: 0 0.5rem 0 1.5rem;
+        .title {
+          .logo-area {
+            width: $logo;
+            height: $logo;
+          }
+
+          h2 {
+            font-size: 0.875rem;
+          }
+        }
+      }
+
+      .nav-area {
+        .option {
+          .optn-name {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 50em) {
+    position: absolute;
+    min-height: 100vh;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in;
+
+    &.show {
+      transform: translateX(0%);
+    }
+
+    .side-menu-container {
+      .top {
+        .collapse-area {
+          display: none;
+        }
+      }
+    }
+  }
+}

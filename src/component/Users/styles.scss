@@ -1,0 +1,20 @@
+$user: calc(100vh - 4.91rem);
+.users {
+    position: relative;
+    height: $user;
+    &.hide {
+        display: none;
+    }
+
+    @media (max-width: 580px) {
+        height: calc(100vh - 6.6rem);
+    }
+
+    @media (max-width: 425px) {
+        height: calc(100vh - 7.6rem);
+    }
+
+    @media (max-width: 289px) {
+        height: calc(100vh - 8.6rem);
+    }
+}

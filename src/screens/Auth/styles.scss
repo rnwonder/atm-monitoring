@@ -1,0 +1,22 @@
+$logo: 5.25rem;
+
+.auth {
+  padding: 5.9375rem 0 0 0;
+  background: #f3f3f5;
+  min-height: 100vh;
+
+  .logo-area {
+    width: $logo;
+    height: $logo;
+    background: #0f0700;
+    border-radius: 50%;
+    margin: 0 0 3.0625rem 0;
+  }
+
+  .auth-stuffs {
+    position: relative;
+    margin-bottom: 4rem;
+    width: 100%;
+    max-width: 24.875rem;
+  }
+}

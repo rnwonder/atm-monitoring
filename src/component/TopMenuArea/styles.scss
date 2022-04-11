@@ -1,0 +1,114 @@
+.top-menu-area {
+  background-color: #ffffff;
+  padding: 1.25rem 1.6875rem 1.3125rem 2.1875rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+
+  .left-area {
+    .back-btn {
+      width: 4rem;
+    }
+    .filter {
+      padding-inline-end: 1.9375rem;
+      margin-inline-end: 1.5625rem;
+      border-right: 1px solid #e4e3e3;
+      // background-color: beige;
+      padding-block: 0.3rem;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        margin: 0 0.5625rem 0 0;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #0f0700;
+      }
+    }
+
+    .search-area {
+      width: 100%;
+      max-width: 14.875rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .right-area {
+    .button {
+      width: 5.875rem;
+
+      &.add-user {
+        width: 7.125rem;
+        margin-inline-end: 0.5625rem;
+      }
+
+      &.add-ticket {
+        width: 8.875rem;
+        margin-inline-end: 0.5625rem;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding-inline: 1rem;
+  }
+
+  @media (max-width: 580px) {
+    background-color: #ffffff;
+    padding: 1rem 1rem 1.1rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+
+    .left-area {
+      flex-direction: column;
+      justify-content: flex-start !important;
+
+      .back-btn {
+        width: 4rem;
+      }
+      .filter {
+        align-self: flex-start;
+        margin: 0 0 0.5rem 0;
+        border-right: none;
+        border-bottom: 1px solid #e4e3e3;
+        // background-color: beige;
+        
+        svg {
+          width: 1.3rem;
+        }
+
+        span {
+          font-size: 0.875rem;
+        }
+      }
+
+      .search-area {
+        width: 100%;
+        max-width: 14.875rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .right-area {
+      flex-direction: column;
+      .button {
+        width: 5.875rem;
+
+        &.add-user {
+          width: 5.875rem;
+          margin-inline-end: 0rem;
+          margin-bottom: 0.5rem;
+        }
+
+        &.add-ticket {
+          width: 5.875rem;
+          margin-inline-end: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

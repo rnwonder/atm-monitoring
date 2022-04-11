@@ -1,0 +1,50 @@
+.users-table {
+    .user-table-area {
+        .title-area, .info-area {
+            .title {
+                &.no {
+                    min-width: 3.8125rem;
+                    width: 5.4416%;
+                }
+
+                &.create-on {
+                    min-width: 6.5625rem;
+                    width: 11.5076%;
+                }
+
+                &.fname {
+                    min-width: 13.0625rem;
+                    width: 11.5076%;
+                }
+
+                &.email {
+                    min-width: 15.375rem;
+                    width: 20.5174%;
+                    
+                }
+
+                &.des {
+                    min-width: 11.375rem;
+                    width: 17.6628%;
+                    
+                }
+
+                &.role {
+                    min-width: 4.1875rem;
+                    width: 8.8314%;
+                    
+                }
+
+                &.branch {
+                    min-width: 11.0625rem;
+                    width: 10.0803%;
+                }
+
+                &.stat {
+                    min-width: 5.125rem;
+                    width: 14.4514%;
+                }
+            }
+        }
+    }
+}

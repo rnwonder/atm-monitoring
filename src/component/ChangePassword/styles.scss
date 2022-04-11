@@ -1,0 +1,36 @@
+.change-password {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.125rem 1.5625rem 2.875rem 1.5625rem;
+  width: 100%;
+  max-width: 24.875rem;
+
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0s 0.25s ease-in, opacity 0.25s ease-in;
+
+  &.show {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0s 0s ease-in, opacity 0.25s ease-in;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 1.375rem;
+    margin: 0 0 2.8125rem 0;
+  }
+
+  .input-area {
+    margin: 0 0 1rem 0;
+  }
+
+  .forget-pass {
+    font-size: 0.875rem;
+    display: block;
+    margin: 0 0 2.8125rem 0;
+  }
+}

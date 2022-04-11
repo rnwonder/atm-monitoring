@@ -1,0 +1,15 @@
+$terminals: calc(100vh - 4.91rem);
+.terminals {
+    position: relative;
+    // background-color: red;
+    height: $terminals;
+    // z-index: 0;
+
+    &.hide {
+        display: none;
+    }
+
+    @media (max-width: 580px) {
+        height: calc(100vh - 6.6rem);
+    }
+}

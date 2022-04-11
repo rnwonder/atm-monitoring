@@ -1,0 +1,148 @@
+.terminals-table {
+  margin-inline: 2rem;
+  overflow: auto;
+  min-height: 20rem;
+  height: calc(100% - 1.5rem - 5.6875rem);
+  //   background-color: yellow;
+
+  &.hide {
+    // transform: scale(0);
+    display: none !important;
+  }
+
+  .terminal-table-area {
+    height: calc(100% - 97px);
+    overflow-y: auto;
+    // background-color: rgb(173, 255, 191);
+    .scroll-area {
+      // background-color: pink;
+      max-height: calc(100% - 41px);
+
+      width: 100%;
+    }
+
+    .title-area {
+      position: sticky;
+      top: 0;
+    }
+
+    .info-area {
+      cursor: pointer;
+    }
+    .title-area,
+    .info-area {
+      height: fit-content;
+
+      //   background-color: red;
+      .title {
+        // border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        padding-block: 1em;
+        background-color: #363740;
+        line-height: 115%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        height: fit-content;
+
+        &.content {
+          background-color: white;
+          color: #171717;
+
+          &.danger {
+            background-color: #ff9a9a;
+          }
+
+          &.caution {
+            background-color: #fde2b8;
+          }
+
+          &.success {
+            background-color: #5aef95;
+          }
+        }
+
+        &.no {
+          min-width: 61px;
+          width: 5.0413%;
+        }
+
+        &.atmstat {
+          min-width: 109px;
+          width: 9.0083%;
+        }
+        &.id {
+          min-width: 89px;
+          width: 7.3554%;
+        }
+        &.amt {
+          min-width: 145px;
+          width: 11.9835%;
+        }
+        &.sname {
+          min-width: 192px;
+          width: 15.8678%;
+        }
+        &.cjam {
+          min-width: 115px;
+          width: 9.5041%;
+        }
+        &.cstatus {
+          min-width: 137px;
+          width: 11.3223%;
+        }
+        &.cread {
+          min-width: 122px;
+          width: 10.0826%;
+        }
+        &.rprint {
+          min-width: 135px;
+          width: 11.1570%;
+        }
+        &.escal {
+          min-width: 105px;
+          width: 8.67769%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 50em) {
+    margin-inline: 1rem;
+    .terminal-table-area {
+      height: calc(100% - 4.25rem);
+      overflow-y: auto;
+      // background-color: rgb(173, 255, 191);
+      .scroll-area {
+        // background-color: pink;
+        max-height: calc(100% - 41px);
+  
+        width: 100%;
+      }
+  
+      .title-area {
+        position: sticky;
+        top: 0;
+      }
+  
+      .info-area {
+        cursor: pointer;
+      }
+      .title-area,
+      .info-area {
+        height: fit-content;
+  
+        //   background-color: red;
+        .title {
+          font-size: 0.75rem;
+          
+  
+        
+        }
+      }
+    }
+  }
+}
